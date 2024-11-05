@@ -1,0 +1,287 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #121212; /* Dark background */
+    color: #e0e0e0; /* Light text color */
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #1a1a1a; /* Dark gray header */
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    white-space: nowrap;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #e0e0e0; /* Light text color */
+    text-decoration: none;
+    padding: 5px 10px; 
+}
+
+nav ul li a:hover {
+    text-decoration: underline; /* Rammstein-style red for hover effect */
+}
+
+nav ul li a.active {
+    border: 2px solid #e0e0e0; /* Light border to indicate active page */
+    padding: 5px 10px;
+    border-radius: 4px; /* Slightly rounded corners */
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.scroll-down {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+    color: #ff0000; /* Red scroll down link */
+    text-decoration: none;
+}
+
+.scroll-down:hover {
+    text-decoration: underline;
+}
+
+/* Add a fade effect */
+.fade {
+    animation: fade 1.5s;
+}
+
+@keyframes fade {
+    from { opacity: 0.4; }
+    to { opacity: 1; }
+}
+
+.skip-link {
+    position: absolute;
+    left: -9999px; /* this along with position hide the skip to main*/
+    top: 0; /**/
+}
+
+.skip-link:focus {
+    left: 10px; /**/
+    top: 10px; /* this along with left makes skip to main show up when focused*//**/ 
+    background-color: #e0e0e0;
+    color: black; /**/
+    padding: 10px; /**/
+    z-index: 1000; /**/
+    border: 2px solid white;/**/ 
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    width: 90vw;
+    margin: 0 auto;
+    gap: 50px;
+}
+
+.image-link {
+    display: block;
+    overflow: hidden;
+    border-radius: 8px;
+    aspect-ratio: 1 / 1; /* Force each cell to be a square */
+    transition: transform 0.3s ease;
+    border: 5px solid #ffcb05; /* Yellow border with a width of 5px */
+    border-radius: 15px;
+}
+
+.image-link img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure image fills the square without distortion */
+    transition: transform 0.3s ease;
+}
+
+.image-link:hover img {
+    transform: scale(1.1); /* Image enlarges on hover */
+}
+
+.gallery-heading {
+    text-align: center;
+    font-size: 1.5em;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.how-it-came-to-be, .clothes-culture, .fun-facts, h2 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+
+
+/*add all p to this section*/
+.how-it-came-to-be_hv p, .clothes-culture_hv p, .fun-facts_hv p,.how-it-came-to-be-tm p, 
+.clothes-culture-tm p, .fun-facts-tm p, .how-it-came-to-be-bm p, .clothes-culture-bm p, 
+.fun-facts-bm p, .how-it-came-to-be-dm , .clothes-culture-dm , .fun-facts-dm ,
+.how-it-came-to-be-g , .clothes-culture-g , .fun-facts-g ,
+.how-it-came-to-be-gm ,.clothes-culture-gm , .fun-facts-gm p,
+.how-it-came-to-be-im , .clothes-culture-im , .fun-facts-im ,
+.how-it-came-to-be-nm , .clothes-culture-nm , .fun-facts-nm ,
+.how-it-came-to-be-m , .clothes-culture-m , .fun-facts-m ,
+.how-it-came-to-be-d , .clothes-culture-d , .fun-facts-d ,
+.how-it-came-to-be-e , .clothes-culture-e , .fun-facts-e , .fun-facts_hv p, .hv_imgs2, .hv_imgs3,
+.thrash_pic, .vest_two, .bm_pic, .bm_pic2, .bm_pic3, .gm_pic{
+    grid-column: 1 / -1; 
+    max-width: 800px; 
+    margin: 10px auto; 
+}
+
+.hv_imgs{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:20px;
+}
+
+.hv_imgs img {
+    width:100%;
+    height: 450px;
+    object-fit: cover;
+}
+
+.hv_imgs2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:20px;
+}
+
+.hv_imgs2 img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
+
+
+.hv_imgs3, .gm_pic, .im_pic {
+    display: grid;
+    justify-content: center;
+    justify-items: center
+}
+
+.hv_imgs3 img, .gm_pic img, .im_pic img{
+    width: auto;
+    height:500px;
+    object-fit: cover;
+}
+
+.vest_two{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:20px;
+}
+
+.vest_two img {
+    width: 400px;
+    height: 600px;
+    object-fit: cover;
+}
+
+.bm_pic3 img{
+    height:400px;
+}
+
+.embeds {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 10px;
+}
+
+/*this is copy pasted from W3 Schools for slideshows*/
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+
+
