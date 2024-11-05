@@ -42,7 +42,9 @@ nav ul li a:hover {
 nav ul li a.active {
     border: 2px solid #e0e0e0; /* Light border to indicate active page */
     padding: 5px 10px;
-    border-radius: 4px; /* Slightly rounded corners */
+    border-radius: 4px;
+    color: white;
+    background-color: black; /* Slightly rounded corners */
 }
 
 img {
@@ -77,13 +79,13 @@ img {
     position: absolute;
     left: -9999px; /* this along with position hide the skip to main*/
     top: 0; /**/
+    background-color: white;
 }
 
 .skip-link:focus {
     left: 10px; /**/
     top: 10px; /* this along with left makes skip to main show up when focused*//**/ 
-    background-color: #e0e0e0;
-    color: black; /**/
+    color: yellow;  /**/
     padding: 10px; /**/
     z-index: 1000; /**/
     border: 2px solid white;/**/ 
@@ -283,5 +285,7 @@ img {
   .active, .dot:hover {
     background-color: #717171;
   }
+
+  
 
 
