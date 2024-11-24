@@ -176,13 +176,13 @@ img {
 }
 
 
-.hv_imgs3, .gm_pic, .im_pic {
+.hv_imgs3, .gm_pic, .im_pic, .nu_pic{
     display: grid;
     justify-content: center;
     justify-items: center
 }
 
-.hv_imgs3 img, .gm_pic img, .im_pic img{
+.hv_imgs3 img, .gm_pic img, .im_pic img, .nu_pic img{
     width: auto;
     height:500px;
     object-fit: cover;
