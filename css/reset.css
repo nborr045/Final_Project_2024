@@ -1,0 +1,57 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit; /* Ensures links inherit color from parent */
+}
+
+/* Responsive images*/
+img {
+    max-width: 100%;
+    height: auto;
+    display: block; /* Prevents space below images */
+}
+
+/* Consistency */
+input,
+textarea,
+select,
+button {
+    font: inherit;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+body {
+    -ms-overflow-style: none; /* Internet Explorer */
+    scrollbar-width: none; /* Firefox */
+}
+
+body::-webkit-scrollbar {
+    display: none; /* Safari and Chrome */
+}
+
+body {
+    background-color: transparent;
+}

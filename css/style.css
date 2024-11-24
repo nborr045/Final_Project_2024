@@ -34,9 +34,9 @@ nav ul li a {
     text-decoration: none;
     padding: 5px 10px; 
 }
-
+                                                                                    /*menu CSS*/
 nav ul li a:hover {
-    text-decoration: underline; /* Rammstein-style red for hover effect */
+    text-decoration: underline; 
 }
 
 nav ul li a.active {
@@ -98,7 +98,7 @@ img {
     margin: 0 auto;
     gap: 50px;
 }
-
+                                                                                    /*Clickable Album Covers*/
 .image-link {
     display: block;
     overflow: hidden;
@@ -134,23 +134,23 @@ img {
 
 
 
-/*add all p to this section*/
+                                                                                                    /*Centering of pages and some images/Gifs*/
 .how-it-came-to-be_hv p, .clothes-culture_hv p, .fun-facts_hv p,.how-it-came-to-be-tm p, 
 .clothes-culture-tm p, .fun-facts-tm p, .how-it-came-to-be-bm p, .clothes-culture-bm p, 
 .fun-facts-bm p, .how-it-came-to-be-dm , .clothes-culture-dm , .fun-facts-dm ,
 .how-it-came-to-be-g , .clothes-culture-g , .fun-facts-g ,
 .how-it-came-to-be-gm ,.clothes-culture-gm , .fun-facts-gm p,
-.how-it-came-to-be-im , .clothes-culture-im , .fun-facts-im ,
 .how-it-came-to-be-nm , .clothes-culture-nm , .fun-facts-nm ,
 .how-it-came-to-be-m , .clothes-culture-m , .fun-facts-m ,
 .how-it-came-to-be-d , .clothes-culture-d , .fun-facts-d ,
 .how-it-came-to-be-e , .clothes-culture-e , .fun-facts-e , .fun-facts_hv p, .hv_imgs2, .hv_imgs3,
-.thrash_pic, .vest_two, .bm_pic, .bm_pic2, .bm_pic3, .gm_pic{
+.thrash_pic, .vest_two, .bm_pic, .bm_pic2, .bm_pic3, .gm_pic, 
+.how-it-came-to-be-im , .clothes-culture-im , .fun-facts-im {
     grid-column: 1 / -1; 
     max-width: 800px; 
     margin: 10px auto; 
 }
-
+                                                                                                        /*Images*/
 .hv_imgs{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -285,6 +285,13 @@ img {
   .active, .dot:hover {
     background-color: #717171;
   }
+  
+
+  .numbertext, .text, .prev, .next {
+    background-color: #121212;
+  }
+
+  
 
   
 
