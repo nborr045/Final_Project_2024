@@ -54,19 +54,6 @@ img {
     height: auto;
 }
 
-.scroll-down {
-    display: block;
-    text-align: center;
-    margin-top: 20px;
-    font-size: 20px;
-    color: #ff0000; /* Red scroll down link */
-    text-decoration: none;
-}
-
-.scroll-down:hover {
-    text-decoration: underline;
-}
-
 /* Add a fade effect */
 .fade {
     animation: fade 1.5s;
