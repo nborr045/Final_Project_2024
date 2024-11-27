@@ -87,7 +87,7 @@ img {
 .skip-link:focus {
     left: 10px; /**/
     top: 10px; /* this along with left makes skip to main show up when focused*//**/ 
-    color: yellow;  /**/
+    color: black;  /**/
     padding: 10px; /**/
     z-index: 1000; /**/
     border: 2px solid white;/**/ 
@@ -95,10 +95,10 @@ img {
 
 .gallery {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     width: 90vw;
     margin: 0 auto;
-    gap: 50px;
+    gap: 3%;
 }
                                                                                     /*Clickable Album Covers*/
 .image-link {
@@ -155,26 +155,26 @@ img {
                                                                                                         /*Images*/
 .hv_imgs{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap:20px;
 }
 
 .hv_imgs img {
-    width:100%;
-    height: 450px;
+    width: 90%;
     object-fit: cover;
+    margin:auto;
 }
 
 .hv_imgs2{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap:20px;
 }
 
 .hv_imgs2 img {
-    width: 100%;
-    height: 600px;
+    width: 90%;
     object-fit: cover;
+    margin:auto;
 }
 
 
@@ -192,14 +192,14 @@ img {
 
 .vest_two{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap:20px;
 }
 
 .vest_two img {
-    width: 400px;
-    height: 600px;
+    width: 90%;
     object-fit: cover;
+    margin: auto;
 }
 
 .bm_pic3 img{
@@ -296,6 +296,26 @@ img {
   .break {
     flex-basis:  100%;
     height: 0;
+  }
+
+  @media (min-width: 850px) {
+    .hv_imgs, .vest_two, .hv_imgs2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    }
+    .hv_imgs img {
+        width:100%;
+        height: 450px;
+        object-fit: cover;
+    }
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        width: 90vw;
+        margin: 0 auto;
+        gap: 3%;
+    }
   }
 
   
