@@ -279,7 +279,7 @@ img {
   .numbertext, .text, .prev, .next {
     background-color: #121212;
   }
-
+/*Break for menu to be in two rows instead of one*/
   .break {
     flex-basis:  100%;
     height: 0;
