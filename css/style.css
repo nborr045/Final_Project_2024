@@ -305,6 +305,16 @@ img {
     }
   }
 
+.site-footer {
+    background-color: #1a1a1a; /* Matches your header's dark gray color */
+    color: #e0e0e0; /* Light text color for readability */
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+    font-size: 0.9em;
+    border-top: 2px solid #ffcb05; /* Optional yellow border for styling */
+}
+
   
 
   
